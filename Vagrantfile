@@ -62,7 +62,7 @@ Vagrant.configure("2") do |config|
     config.vm.hostname = "dspace.vagrant.test"
 
     # How long to wait for machine to boot (in seconds)
-    config.vm.boot_timeout = 500
+    config.vm.boot_timeout = 1000
 
     #-----------------------------
     # HD Settings

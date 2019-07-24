@@ -22,7 +22,7 @@ sudo apt-get install -y ruby ruby-dev zlib1g-dev dnsutils geoip-bin >/dev/null
 
 # Update RubyGems for the provider
 echo "Updating RubyGems..."
-gem install --no-ri --no-rdoc rubygems-update
+gem install rubygems-update
 update_rubygems >/dev/null
 
 # Figure out the two-letter country code for the current locale, based on IP address
@@ -39,7 +39,7 @@ fi
 
 if [ "$(gem search -i apt-spy2)" = "false" ]; then
   echo "Installing apt-spy2 (and prerequisites)..."
-  gem install --no-ri --no-rdoc apt-spy2
+  gem install apt-spy2
   echo "... apt-spy2 installed!"
 fi
 
