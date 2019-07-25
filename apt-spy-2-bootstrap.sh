@@ -25,6 +25,9 @@ echo "Updating RubyGems..."
 gem install rubygems-update
 update_rubygems >/dev/null
 
+# Restore rake ( TONY 2019 )
+gem pristine rake
+
 # Figure out the two-letter country code for the current locale, based on IP address
 # First, let's get our public IP address via OpenDNS (e.g. http://unix.stackexchange.com/a/81699)
 CURRENTIP=`dig +short myip.opendns.com @resolver1.opendns.com`
