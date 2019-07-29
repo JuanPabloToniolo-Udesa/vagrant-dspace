@@ -26,6 +26,7 @@ gem install rubygems-update
 update_rubygems >/dev/null
 
 # Restore rake ( TONY 2019 )
+echo "Installing Rake Gem..."
 gem pristine rake
 
 # Figure out the two-letter country code for the current locale, based on IP address

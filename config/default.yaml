@@ -31,7 +31,7 @@ vm_memory  : 3072
 
 # Number of CPUs to allow VirtualBox to use (2 or more help the VirtualBox VM stay responsive during
 # active development)
-vb_cpus : 2
+vb_cpus : 3
 
 # Local IP address which will refer to this VM
 # (Changes to this setting require a 'vagrant reload' to take effect)
@@ -59,7 +59,7 @@ db_port    : 5432
 #     directly on the VM (i.e. no direct IDE integration)
 # By default this is "false" to keep things speedy.
 # (Changes to this setting require a 'vagrant destroy && vagrant up' to take effect)
-sync_src_to_host : false
+sync_src_to_host : true
 
 # Default Vagrant box to use. This should be an Ubuntu box (16.04 64bit recommended)
 # as 'vagrant-dspace' has not been tested on other OSes.
